@@ -10,3 +10,46 @@
  
  I have installed the required MYSQL community package and configured to run on localhost:3000
  
+
+## Week2
+
+ 02/03/2020
+
+Tuple is a group od information
+
+The idea behind relational databases is to link information between records using foriegn keys and idetifiers which also is represented in UML diagrams nicley.
+
+a flat file consists of only one set of data such as an excel spreedsheet
+
+Data is these tables are thought of in terms of logical sets of records
+
+logical sets - tables
+
+Creating a table 
+	CREATE TABLE tablename(col1 data_type,col2 datatype)
+
+A student will have a student id, This id is likly to be used as a unique identifier
+
+Creating a table that is a join table would link a table with the primary key courseid and student id
+
+A composit key is a key that is made from a table that has 2 primary forign keys in a join table
+
+DataTypes
+	each platofrm has different types that are similar to other platforms but the do vary
+
+EXAMPLES
+
+create table tblStudent(StudentID INTEGER NOT NULL PRIMARY KEY , StudentName VARCHAR(10))
+
+create table tblCourse(CourseID INTEGER NOT NULL PRIMARY KEY, CourseName VARCHAR(10))
+
+  INSERT INTO tblStudent (StudentName) VALUES ("Brad")
+
+    INSERT INTO Student (StudentName,Age) VALUES ("Brad", 32)
+
+  SELECT col1, col2 FROM tableName Where col1 == col2
+
+ SUM(PROD_STOCK*PROD_UNIT) AS TOTAL_STOCKWORTH FROM TBL_PRODUCT
+
+CROSS PRODUCT is two tables being manipulated into a view
+
