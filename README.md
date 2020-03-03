@@ -53,3 +53,38 @@ create table tblCourse(CourseID INTEGER NOT NULL PRIMARY KEY, CourseName VARCHAR
 
 CROSS PRODUCT is two tables being manipulated into a view
 
+## Week2 
+  04/03/2020
+
+  delimiter creates a procedure to store to use later
+
+
+DELIMITER $$
+ 
+CREATE PROCEDURE sp_name()
+BEGIN
+  -- statements
+END $$
+ 
+DELIMITER ;
+
+call sp_name();
+
+Test sub routines outside of the routine to check that it is working before commiting it to the procedure
+
+Using releational databases CREATE DELETE UPDATE
+
+Br
+
+THE CRUD
+
+THE STORY BOARDS
+
+HOMEWORK -- practice common mysql queries
+still working on the brief
+
+draw a storyboard of what happens in the game
+highscores must be created aswell
+Logged in status 
+  as someone else is needed to be seen online to try play against someone
+  
