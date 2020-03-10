@@ -136,4 +136,95 @@ Logged in status
   Talking about transactional sql which is a little bit more primitive than other languages as you can use things like the goto statement
   Flow control sstatements let you repeat certain areas of the code.
 
-  
+  flow control statements
+    case
+    if
+    iterate
+    leave
+    loop
+    repeat
+    return
+    while
+
+    mysql dev docs dev.mysql.com/doc/refman.8.0/
+---------------------------------------------------------------------------------------
+    if search then statement
+
+    DELIMITER //
+      CREATE FUNCTION SimpleComparer(n INT, m INT)
+        RETURNS VARCHAR(20)
+          BEGIN
+            DECLARE s varchar(20);
+            if n > m THEN SET s = m;
+              ELSE IF n < m THEN SET s = n;
+                ELSE
+                  SET n = m
+            END IF
+
+          END
+
+
+    DELIMITER;
+
+---------------------------------------------------------------------------------------
+
+CASE value
+  WHEN when_value THEN statement_list
+   WHEN when_value THEN statement_list
+    WHEN when_value THEN statement_list
+     WHEN when_value THEN statement_list
+
+     END CASE
+
+---------------------------------------------------------------------------------------
+
+
+     CREATE PROCEDURE p()
+     BEGIN
+      DECLARE v INT DEFAULT 1;
+      CASE
+        WHEN 2 THEN SELECT *;
+      END CASE
+
+---------------------------------------------------------------------------------------
+
+CREATE PROCEDURE brad(p1 INT)
+  BEGIN
+    label1 LOOP
+
+    END LOOP label1
+
+    END
+
+
+
+---------------------------------------------------------------------------------------
+
+    REPEAT UNTIL
+
+    END REPEAT
+---------------------------------------------------------------------------------------
+
+   WHILE v1 > 0 do
+    SET v1 = v1 - 1;
+   END WHILE
+  END
+
+    
+
+    END REPEAT
+
+---------------------------------------------------------------------------------------
+DELIMITER //
+
+     CREATE PROCEDURE verifyCredentials(pEmail VARCHAR(50) ,pPassword VARCHAR(50))
+     BEGIN
+      SELECT * FROM LOGINTABLE WHERE email == pEmail && password == pPassword
+     END
+
+     //DELIMITER
+
+
+HOMEWORK
+
+Do stored procedures for homework in the class 4-5 session notes
