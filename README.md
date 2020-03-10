@@ -88,3 +88,52 @@ highscores must be created aswell
 Logged in status 
   as someone else is needed to be seen online to try play against someone
   
+  ## Week 3 ##
+  09/03/2020
+
+  Today CRUD is being discussed for our project milestone Create Update and Delete tables
+
+  Logical ERD and Storyboards for the game needs to be completed
+  The logical erd diagram is located in the sessions 4-5 which includes the UML diagram that was discussed last class. Pictures of the brainstorming were taken and are stored on phone.
+
+  Currently looking at logic of the UML and the specific characters abilities ( or what can this class do!) The Player
+
+  Does the character have a ascore or the player have a score
+
+  What is the UML going to look like when moved over to the storyboard?
+
+  STORYBOARD
+
+  Literally drawing story of what happens when you run the game, brainistorm about what fields from what classes are used on each storyboard
+
+  Storyboard requires detailed statements underneath the image, 1 2 3 4 steps etc for the code logic
+
+  Sometimes in order to pass the correct information into the login you may need to post the entire object as the majority of the fields or properties of the player class that has been instatiated are required. This is mainly just neat code ethics
+
+  Register UML "sorry the email does not exsit" "try again" 
+
+  Where is the update class being called from and what is it doing
+  does it just update the screen or does it handle manipulation on the fields and properties themselves.
+
+  Character may have a tileID where the character is currently positioned on the map. Do the players keep track of where they are posistioned?
+  I think yes as having a central coordinator keeping track of multiple locations and players could get messy
+
+  LAYOUT
+
+  CRUD Table NEEDS ATTENTION
+
+  Login
+    retrieve all the required fields like name and password from the database where the login and password matches the login and password of the user.
+    A method to delete a player must be implemented
+    Creation of the character class. Instantiation
+
+    PRODUCE a CRUD table for the game design
+
+    ERD diagram with notation
+
+## Week 3 Class 2 10/02/2020
+
+  Talking about transactional sql which is a little bit more primitive than other languages as you can use things like the goto statement
+  Flow control sstatements let you repeat certain areas of the code.
+
+  
