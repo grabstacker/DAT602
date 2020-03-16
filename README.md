@@ -228,3 +228,59 @@ DELIMITER //
 HOMEWORK
 
 Do stored procedures for homework in the class 4-5 session notes
+
+
+## Week 4 15-03-2020
+
+----Update----
+UPDATE [LOW_PRIORITY] [IGNORE] table_reference
+    SET assignment_list
+    [WHERE where_condition]
+    [ORDER BY ...]
+    [LIMIT row_count]
+
+value:
+    {expr | DEFAULT}
+
+assignment:
+    col_name = value
+
+assignment_list:
+    assignment [, assignment] ...
+
+    update employee
+      set age = age + 1
+        where first_name = "mary" AND last_name = "williams";
+
+----Delete----- 
+
+Delete from table where condition
+
+Delete from employees <-- this will delete the entire table>
+
+delete from employees where officeCode = 4;
+
+delete from table_name order by coloum1, coloumn2 limit row_count
+
+delete from customers order by sutomerName limit 10; <-- un likly query to run>
+
+decending is the default order by statement
+
+delete from customers where country = "france" order by creaditLimit LIMIT 5;
+
+You must define the parent before the child
+
+foriegn keys must be set with an add constraint statement
+
+
+
+-----Milestone One Due: Wednesday-----
+
+select insert update delete for each of the tables just to show that the tables and working and thier corrosponding joins work, inseret some data that is relevaint to the tables to get some kind of results returned he wants it put into a seperate sql files in a folder and he should be able to run it easily on his system.
+
+Not required to do any joins at this point
+
+Uniory table is a one to many connecting to itself
+
+story board crud table diagram uml
+
