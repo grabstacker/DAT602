@@ -284,3 +284,43 @@ Uniory table is a one to many connecting to itself
 
 story board crud table diagram uml
 
+
+## Week 5 17/03/2020
+
+The report will contain a graphical design for the game
+
+Screen design 
+Storyboarding descriptions and usage snarios
+
+-----DESIGN FOR-----
+live game play
+player registeration
+player selection
+comfirmation for a game
+game administration functions
+
+Draw a crud table
+list every table and atrribute that gets afffected in storyboards
+
+Logical entity realiationship diagram using crows foot notation
+
+write a test all ddl and sql required to create the tables and realtiation between table that suppirt you game
+
+He wants them in one procedure that makes all the tables
+
+write and test a set of querier that update insert deletet select for each and every table
+
+Game character
+
+excel spreadsheet crud table
+report and 
+any sql in a text file a single one that runs and makes everything in one go 
+
+a crud table
+___________________________________________________________
+Document inside google docs has been structured for the required milestone one tasks
+
+https://docs.google.com/document/d/10myzSAzZMGGTVLX8kt1rtllw6zPfMU2g4cI_2FG-pyo/edit#
+
+Due date is wednesday 25th march
+____________________________________________________________
