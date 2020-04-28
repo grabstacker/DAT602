@@ -1,0 +1,55 @@
+Game
+    gameId U
+    playerId (fk)
+    poolId (fk)
+
+
+Pool
+    poolId int U
+    hardwarePower
+    bitcoinsMined decimal
+    hashRate decimal
+    gameId int
+    BitcoinId (fk)
+
+Bitcoin
+    BitcoinId int U
+    totalValue  decimal
+    tileId (fk)
+
+Multiplier
+    multiplierId U
+    multiplierAmount  decimal
+    countDownTimer Time
+    tileId (fk)
+Tile
+    tileId U
+    positionX int
+    positionY int
+    
+
+Player
+    playerId int U
+    name string
+    password string
+    hiScore decimal
+    currentMultiplier
+    isOnline true/false
+    isAdmin true/false
+    tileId (fk)
+    positionX int
+    positionY int
+    multiplierId (fk)
+
+
+1 game has many pools with different hashrates and multpliers depending 
+on the random generation of a range of realistic numbers to make the pools
+switching power more "profitiable". 1 pool can generate many bitcoins and multiplers
+to increase the power of the players miner generating a hiScore. A Player can join 1 
+game and not many games to enure the players account is only played in one instance.
+1 player can aquire many Bitcoins which vary in totalValue. 1 Pool can have many players
+which generate larger multipliers for the players. 1 player can have only 1 multiplier which
+resets when you log out. 1 multiplier can have only one player which is the player that gets
+to the tile first. 1 tile can have one player. 1 tile can have one bitcoin. 1 tile can have 1 
+multiplier. This ensures players and objects only occupie one space at a time making movement
+harder.
