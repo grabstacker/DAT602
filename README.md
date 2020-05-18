@@ -59,12 +59,12 @@ CROSS PRODUCT is two tables being manipulated into a view
 
 delimiter creates a procedure to store to use later
 
-DELIMITER \\\\\\\\\\$\$
+DELIMITER \\\\\\\\\\\\\\$\$
 
 CREATE PROCEDURE sp_name()
 BEGIN
 -- statements
-END \\\\\\\\\\$\$
+END \\\\\\\\\\\\\\$\$
 
 DELIMITER ;
 
@@ -384,3 +384,20 @@ Begin
 Declear a, b INT DEFAULT 5;
 insert into table1 value (a);
 end
+
+## class 11/05/2020 Online Teams
+
+Import sql plugins for vs to interact with the database
+
+looking at creating a console app for the application
+
+need to make a reference to the mysql db locally in the console app
+
+currently looking at addusername function
+
+## class 18.05.2020 Online Teams
+
+27th may due date
+
+Currently reviewing requirements:
+Assignment 2:
